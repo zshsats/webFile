@@ -1,0 +1,130 @@
+.loginMain{
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 0;
+  .contentBox{
+      position: relative;
+      background-color: #fff;
+      height: 600px;
+      width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+
+  }
+  .ivu-form{
+     margin-top: 50px;
+  }
+  .header>h2{
+    color:#7E7E7E;
+    text-align:center;
+    font-size: 24px;
+    letter-spacing:-0.05em;
+    line-height:2px;
+    margin:20px 0px 20px;
+    margin-bottom:10px;
+  }
+
+  .header>h2:before,.header>h2:after{
+    content:"";
+    height:1px;
+    position:absolute;
+    top:47px;
+    width:40%;
+  }
+
+  .header>h2:after{
+    background:rgb(126,126,126);
+    background:-moz-linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    background:-webkit-linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    background:-moz-linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    background:-ms-linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    background:linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    right:0px;
+  }
+
+  .header>h2:before{
+    background:rgb(126,126,126);
+    background:-moz-linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    background:-webkit-linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    background:-moz-linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    background:-ms-linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    background:linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+    left:0px;
+  }
+  .content{
+    padding-top: 50px;
+    .icon{
+      font-size: 24px;
+    }
+    .ivu-form-item-error .ivu-input {
+      border: none;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+    .ivu-form-item-error .ivu-input-group-prepend {
+      background-color: #fff;
+      border:none;
+
+    }
+    .ivu-form-item-error-tip{
+      left: 45px;
+    }
+    .ivu-input-group-append, .ivu-input-group-prepend{
+      background: none;
+      border: 0;
+      font-size: 14px;
+    }
+    .ivu-input{
+      border: 0;
+      height: 44px;
+      line-height: 44px;
+      font-size: 16px;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+    .ivu-input-wrapper{
+      border-bottom:1px solid #e0e0e0;
+    }
+  }
+.check-num{
+  .ivu-input{
+    border: 1px solid #e0e0e0;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    &:focus,&:hover {
+        border-color: #57a3f3;
+    }
+  }
+  .ivu-input-wrapper{
+    width: 240px;
+    border-bottom:none;
+    float: left;
+  }
+  .rand-num{
+    float: right;
+  }
+}
+
+
+.checkpwd{
+  padding-top: 20px;
+  p{
+    float: right;
+  }
+}
+.login{
+  padding-top: 15px;
+  .ivu-btn{
+
+    width: 100%;
+
+  }
+}
+
+
+}

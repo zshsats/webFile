@@ -1,0 +1,88 @@
+.menuList {
+  .nav a {
+    display: block;
+    overflow: hidden;
+    padding-left: 20px;
+    line-height: 46px;
+    max-height: 46px;
+    color: #ABB1B7;
+    font-size: 16px;
+    transition: all .3s;
+  }
+  .nav a span {
+    margin-left: 30px;
+  }
+  .nav-item {
+    position: relative;
+  }
+  .nav-item.nav-show {
+    border-bottom: none;
+  }
+  .child-menu {
+    background: rgba(0, 0, 0, .1);
+
+  }
+  .nav-item > a:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 2px;
+    height: 46px;
+    background: #34A0CE;
+    opacity: 0;
+    transition: all .3s;
+  }
+  .nav .nav-icon {
+    font-size: 20px;
+    position: absolute;
+    margin-left: -1px;
+  }
+  .nav-arrow {
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+    transition: transform .3s;
+  }
+  /* 此处为导航右侧箭头 如果自定义iconfont 也需要替换*/
+  .nav-arrow::after {
+    content: "\e65f";
+  }
+  /*---------------------*/
+  .nav-show .nav-arrow {
+    transform: rotate(90deg);
+  }
+  .nav-show, .nav-item > a:hover {
+    color: #FFF;
+
+  }
+  .nav-show > a:before, .nav-item > a:hover:before {
+    opacity: 1;
+  }
+  .nav-item li:hover a {
+    color: #FFF;
+    background: rgba(0, 0, 0, .1);
+  }
+
+  .slide-up{
+
+    overflow: hidden;
+    -webkit-transition:max-height 0.5s ease-out;
+    -moz-transition:height 0.5s ease-out;
+    -o-transition: height 0.5s ease-out;
+    transition: height 0.5s ease-out;
+  }
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+

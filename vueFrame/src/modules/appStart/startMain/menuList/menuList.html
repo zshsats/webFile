@@ -1,0 +1,21 @@
+<div class="menuList">
+    <ul class="nav" @click="goRoute">
+        <li class="nav-item" :class="{'nav-show':item.isOpen}" v-for="(item, index) in menuData" :data-index="index">
+            <a href="javascript:;"><i class="iconfont icon icon-shouye icon"></i><span>{{item.name}}</span><i class="iconfont icon nav-arrow" v-show="item.children.length!==0"></i></a>
+            <transition
+                    @before-enter="beforeEnter"
+                    @enter="enter"
+                    @before-leave="beforeLeave"
+                    @leave="leave"
+                    :css="false"
+            >
+                <ul v-show="item.isOpen" class="child-menu" v-if="item.children.length!==0">
+                    <li v-for="(unit,num) in item.children" :data-num="num" :data-index="index"><a href="javascript:;"><span>{{unit.name}}</span></a></li>
+                </ul>
+            </transition>
+        </li>
+    </ul>
+</div>
+
+
+<!--:class="{'slid-up':!item.isOpen}"-->

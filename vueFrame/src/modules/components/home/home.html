@@ -1,0 +1,10 @@
+<section class="home">
+    <div >
+        <h1 @click="detail = !detail">Title</h1>
+        <transition name="child-slide">
+            <p v-show="detail">
+                在纽约长岛的一家餐吧里有一只132岁的大龙虾。这只纽约最老的龙虾名叫Louie，重22磅（约20斤），20年来，它一直生活在一家餐吧里，餐吧主人Butch Yamali就像养了一只宠物一样，把它养在水族箱里。
+            </p>
+        </transition>
+    </div>
+</section>

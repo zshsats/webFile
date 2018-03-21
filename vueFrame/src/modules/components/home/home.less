@@ -1,0 +1,15 @@
+.home{
+  .child-slide-enter-active ,.child-slide-leave-active{
+    transition: all 5.5s cubic-bezier(0, 1, 0.5, 1);
+  }
+
+  .child-slide-enter,.child-slide-leave-to{
+    height: 0;
+    overflow: hidden;
+
+  }
+  .child-slide-leave,.child-slide-enter-to{
+    height: auto;
+    overflow: hidden;
+  }
+}

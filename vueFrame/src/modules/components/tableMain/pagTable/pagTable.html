@@ -1,0 +1,10 @@
+<section class="pagTable">
+    <Table border ref="selection" :columns="columns4" :data="data1" height="200"></Table>
+    <div class="clearfix">
+        <div class="pagPostion">
+            <Page :total="100" show-elevator show-sizer @on-change="goPage" @on-page-size-change="getSize"></Page>
+        </div>
+    </div>
+
+
+</section>

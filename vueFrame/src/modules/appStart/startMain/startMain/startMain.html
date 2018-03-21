@@ -1,0 +1,26 @@
+<section class="appStart">
+    <div class="layout">
+        <Layout class="contentBox">
+            <Sider collapsible :collapsed-width="78" class="slideHeight" v-model="isCollapsed" >
+                <div class="appLog">
+                    <img src="assets/img/app/log.jpg">
+                </div>
+                <menu-list :menu-data="menuList" @go-state-one="goStateOne" @go-state-two="goStateTwo"></menu-list>
+            </Sider>
+            <Layout>
+                <Header class="header"></Header>
+                <Content class="content">
+                    <Breadcrumb class="nav">
+                        <BreadcrumbItem>{{firstRout}}</BreadcrumbItem>
+                        <BreadcrumbItem v-if="lastRout">{{lastRout}}</BreadcrumbItem>
+
+                    </Breadcrumb>
+                    <Card>
+                        <div> <router-view></router-view></div>
+                    </Card>
+                </Content>
+            </Layout>
+        </Layout>
+    </div>
+</section>
+

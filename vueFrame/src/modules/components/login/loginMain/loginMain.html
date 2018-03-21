@@ -1,0 +1,33 @@
+<section class="loginMain">
+    <div class="contentBox">
+        <div class="header">
+            <h2>登录</h2>
+        </div>
+        <div class="content">
+            <Form ref="formLogin" :model="loginData" :rules="ruleLogin">
+                <FormItem prop="name">
+                    <Input type="text" placeholder="用户名" v-model="loginData.name">
+                    <i class="iconfont icon icon-yonghu" slot="prepend"></i>
+                    </Input>
+                </FormItem>
+                <FormItem prop="password">
+                    <Input type="password" placeholder="密码" v-model="loginData.password">
+                    <i class="iconfont icon icon-mima" slot="prepend"></i>
+                    </Input>
+                </FormItem>
+                <FormItem prop="checkNum" class="check-num clearfix">
+                    <Input v-model="loginData.checkNum"></Input>
+                    <canvas class="rand-num" width='240px' height='45px' v-checkInit @click="checkValide($event)"></canvas>
+                </FormItem>
+                <div class="clearfix checkpwd">
+                    <Checkbox v-model="checked">记住密码</Checkbox>
+                    <p>忘记密码</p>
+                </div>
+                <FormItem  class="login">
+                    <Button type="primary" @click="loginSubmit('formLogin')">登录</Button>
+                </FormItem>
+            </Form>
+        </div>
+
+    </div>
+</section>
